@@ -1,0 +1,25 @@
+.agence { display: flex; flex-wrap: wrap; gap: clamp(40px, 6vw, 88px); align-items: center; }
+.agence__photo { flex: 1 1 380px; position: relative; max-width: 520px; }
+.agence__img { border-radius: 24px; overflow: hidden; aspect-ratio: 4 / 5; }
+.agence__img img { width: 100%; height: 100%; object-fit: cover; }
+.agence__badge {
+  position: absolute; right: -20px; bottom: 40px; background: var(--bleu); border-radius: 18px;
+  padding: 20px 24px; display: flex; align-items: center; gap: 14px; font-weight: 600; font-size: 13px;
+}
+.agence__txt { flex: 1 1 480px; display: flex; flex-direction: column; gap: 28px; }
+.agence__lead { font-size: 18px; line-height: 1.65; color: var(--gris-vert); }
+.agence__points { display: flex; flex-direction: column; gap: 18px; }
+.agence__point { display: flex; gap: 16px; align-items: flex-start; }
+.agence__pico {
+  flex: none; width: 48px; height: 48px; border-radius: 14px; background: #fff; color: var(--terracotta-fonce);
+  display: flex; align-items: center; justify-content: center;
+}
+.agence__ptxt { font-size: 16px; line-height: 1.55; }
+.agence__ptxt strong { display: block; font-size: 17px; }
+.agence__stats { display: flex; flex-wrap: wrap; gap: 48px; padding-top: 28px; border-top: 1px solid var(--beige-filet); }
+.agence__n { font-size: 44px; font-weight: 700; line-height: 1; }
+.agence__l { font-size: 14px; margin-top: 6px; color: var(--gris-vert); }
+
+@media (max-width: 767px) {
+  .agence__badge { right: 12px; }
+}

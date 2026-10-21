@@ -1,0 +1,13 @@
+.header {
+  position: relative; padding-top: 24px; padding-bottom: 24px;
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px;
+}
+.header__brand { display: flex; align-items: center; gap: 14px; }
+.header__name { font-size: 14px; font-weight: 500; letter-spacing: 0.36em; }
+.header__nav { display: flex; flex-wrap: wrap; gap: 32px; font-size: 15px; font-weight: 500; }
+.header__actions { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+.header__tel { display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; }
+
+@media (max-width: 767px) {
+  .header__nav { order: 3; flex-basis: 100%; gap: 24px; }
+}

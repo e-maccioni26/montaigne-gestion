@@ -1,0 +1,24 @@
+.footer { position: relative; color: var(--creme); overflow: hidden; }
+.footer__bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.footer__veil { position: absolute; inset: 0; background: rgba(34, 49, 46, 0.9); }
+.footer__inner { position: relative; padding-top: clamp(80px, 10vw, 140px); padding-bottom: 36px; }
+.footer__top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 48px; }
+.footer__eyebrow { margin-bottom: 20px; }
+.footer__title { font-size: clamp(52px, 8vw, 120px); line-height: 0.95; font-weight: 700; letter-spacing: -0.02em; }
+.footer__ring {
+  width: 132px; height: 132px; border-radius: 50%; background: var(--creme); color: var(--vert);
+  display: flex; align-items: center; justify-content: center; cursor: default;
+}
+.footer__cards { margin-top: 64px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.footer__card {
+  display: flex; gap: 16px; align-items: center; padding: 22px 24px; border-radius: 18px;
+  border: 1px solid rgba(255, 245, 225, 0.22); cursor: default;
+}
+.footer__ctxt { font-size: 16px; line-height: 1.4; }
+.footer__clabel { display: block; font-size: 12px; letter-spacing: 0.2em; }
+.footer__bottom {
+  margin-top: 64px; padding-top: 24px; border-top: 1px solid rgba(255, 245, 225, 0.2);
+  display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px; font-size: 14px;
+}
+.footer__years { display: flex; align-items: center; gap: 10px; font-weight: 600; }
+.footer__legal { display: flex; flex-wrap: wrap; gap: 24px; }

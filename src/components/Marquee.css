@@ -1,0 +1,10 @@
+.marquee {
+  background: var(--vert); color: var(--creme); border-top: 1px solid rgba(255, 245, 225, 0.12);
+  padding: 22px 0; overflow: hidden;
+}
+.marquee__track {
+  display: flex; width: max-content; gap: 40px; align-items: center;
+  font-size: 18px; font-weight: 500; letter-spacing: 0.24em;
+}
+.marquee__item { display: inline-flex; align-items: center; gap: 40px; white-space: nowrap; }
+.marquee__dot { width: 7px; height: 7px; border-radius: 50%; background: var(--terracotta); }

@@ -1,0 +1,12 @@
+.methode__head { text-align: center; margin-bottom: 56px; }
+.methode__eyebrow { margin-bottom: 16px; }
+.methode__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+.step { background: #fff; border-radius: var(--r-carte); padding: 28px; display: flex; flex-direction: column; gap: 16px; }
+.step__top { display: flex; justify-content: space-between; align-items: center; }
+.step__ico {
+  width: 56px; height: 56px; border-radius: 16px; background: var(--bleu); color: var(--vert);
+  display: flex; align-items: center; justify-content: center;
+}
+.step__n { font-size: 40px; font-weight: 700; color: var(--beige-filet); }
+.step__title { font-size: 20px; font-weight: 700; }
+.step__txt { font-size: 15px; line-height: 1.6; color: var(--gris-vert); }

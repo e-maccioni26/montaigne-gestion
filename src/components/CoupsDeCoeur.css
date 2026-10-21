@@ -1,0 +1,27 @@
+.coeur { background: var(--bleu); position: relative; }
+.coeur__inner { position: relative; }
+.coeur__head {
+  display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 40px;
+}
+.coeur__title { margin-top: 20px; }
+.coeur__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 20px; }
+.ann { border-radius: var(--r-carte); background: var(--creme); overflow: hidden; display: flex; flex-direction: column; cursor: default; }
+.ann__media { height: 230px; background: #fff; position: relative; overflow: hidden; }
+.ann__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.ann__tag {
+  position: absolute; top: 16px; left: 16px; display: inline-flex; align-items: center; height: 30px; padding: 0 12px;
+  border-radius: 8px; background: var(--vert); color: var(--creme); font-size: 11px; font-weight: 600; letter-spacing: 0.2em;
+}
+.ann__body { padding: 22px 24px 24px; display: flex; flex-direction: column; gap: 10px; }
+.ann__type { font-size: 12px; font-weight: 600; letter-spacing: 0.2em; color: var(--gris-vert); }
+.ann__ville { display: inline-flex; align-items: center; gap: 8px; font-size: 20px; font-weight: 700; }
+.ann__foot {
+  display: flex; justify-content: space-between; align-items: center; padding-top: 14px; margin-top: 4px;
+  border-top: 1px solid #e8dcc4;
+}
+.ann__prix { font-size: 18px; font-weight: 600; }
+.ann__unit { font-size: 13px; font-weight: 400; color: var(--gris-vert); }
+.ann__go {
+  width: 40px; height: 40px; border-radius: 50%; background: var(--vert); color: var(--creme);
+  display: flex; align-items: center; justify-content: center;
+}

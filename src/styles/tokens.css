@@ -1,0 +1,51 @@
+:root {
+  --vert: #22312e;
+  --creme: #fff5e1;
+  --bleu: #c7dbff;
+  --terracotta: #d4583c;
+  --terracotta-fonce: #b8462d;
+  --gris-vert: #4f5d59;
+  --beige-filet: #e2d4b8;
+  --r-carte: 22px;
+  --r-bouton: 10px;
+  --r-champ: 12px;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--creme);
+  color: var(--vert);
+  font-family: Montserrat, Arial, sans-serif;
+  overflow-x: hidden;
+}
+h1, h2, h3, p { margin: 0; }
+button, select, input { font-family: inherit; }
+img { display: block; }
+
+/* Éléments "faux liens" : même style, aucun lien réel */
+.fake-link { cursor: default; }
+
+.container { max-width: 1280px; width: 100%; margin: 0 auto; padding-left: 24px; padding-right: 24px; }
+.section-pad { padding-top: clamp(80px, 10vw, 140px); padding-bottom: clamp(80px, 10vw, 140px); }
+
+.eyebrow { font-size: 13px; font-weight: 500; letter-spacing: 0.36em; }
+.h2 { font-size: clamp(32px, 3.8vw, 52px); line-height: 1.12; font-weight: 700; }
+
+.badge {
+  display: inline-flex; align-items: center; height: 40px; padding: 0 20px;
+  border-radius: var(--r-bouton); background: var(--terracotta-fonce); color: var(--creme);
+  font-size: 13px; font-weight: 700; letter-spacing: 0.3em;
+}
+
+.btn {
+  display: inline-flex; align-items: center; gap: 10px; border-radius: var(--r-bouton);
+  font-size: 15px; font-weight: 600; cursor: default;
+}
+.btn--creme { height: 46px; padding: 0 20px; background: var(--creme); color: var(--vert); gap: 8px; }
+.btn--vert { height: 50px; padding: 0 24px; background: var(--vert); color: var(--creme); }
+.btn--contour { height: 48px; padding: 0 22px; border: 1.5px solid var(--vert); color: var(--vert); }
+
+.hex-bg { position: absolute; inset: 0; width: 100%; height: 100%; }
