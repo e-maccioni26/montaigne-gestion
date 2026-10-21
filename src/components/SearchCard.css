@@ -25,3 +25,7 @@
   min-height: 60px; padding: 0 28px; border-radius: var(--r-champ);
   background: var(--vert); color: var(--creme); font-size: 16px; font-weight: 600;
 }
+
+@media (max-width: 767px) {
+  .search__submit { flex: 1 1 100%; }
+}

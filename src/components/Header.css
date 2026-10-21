@@ -9,5 +9,10 @@
 .header__tel { display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; }
 
 @media (max-width: 767px) {
-  .header__nav { order: 3; flex-basis: 100%; gap: 24px; }
+  .header { gap: 14px; }
+  .header__name { font-size: 12px; letter-spacing: 0.28em; }
+  .header__actions { flex-basis: 100%; justify-content: space-between; gap: 12px; }
+  .header__actions .btn { height: 42px; padding: 0 16px; font-size: 14px; }
+  .header__tel { font-size: 14px; }
+  .header__nav { order: 3; flex-basis: 100%; justify-content: space-between; gap: 12px; font-size: 14px; }
 }

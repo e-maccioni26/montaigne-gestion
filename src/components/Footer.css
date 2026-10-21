@@ -22,3 +22,9 @@
 }
 .footer__years { display: flex; align-items: center; gap: 10px; font-weight: 600; }
 .footer__legal { display: flex; flex-wrap: wrap; gap: 24px; }
+
+@media (max-width: 767px) {
+  .footer__top { gap: 32px; }
+  .footer__ring { width: 96px; height: 96px; }
+  .footer__cards, .footer__bottom { margin-top: 40px; }
+}
